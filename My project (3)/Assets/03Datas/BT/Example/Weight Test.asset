@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6611501620438843827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3e0c5eeb268b6488f17d5d0eee367d, type: 3}
+  m_Name: Debug Log
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 019890e787f2be644b3c4161f425eb1e
+  position: {x: 413, y: 582}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  message: This is Test A
+--- !u!114 &-4634764004049452981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e28be83fe1bf9745ad9b8d08e903140, type: 3}
+  m_Name: Weight Selector
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 46831ddc3404c554a8d2687c4c6ac76f
+  position: {x: -5.9999537, y: 283.7999}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: dgfsdgdsg
+  children:
+  - {fileID: 7906830593573532388}
+  - {fileID: 4480939150811395769}
+  - {fileID: 3546363941196665494}
+  - {fileID: 5786108949581935001}
+  - {fileID: 811851775043685530}
+  totalWeights: 6.0000005
+--- !u!114 &-91529307103255563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7c5fb4749c608409db46d3873341cc, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 37ad696068372aa4fb4e815c5c08706b
+  position: {x: -5.699978, y: -0.9999983}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 6160362348527819415}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c92f7a0caa2af94aab74cc9464ab471, type: 3}
+  m_Name: Weight Test
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -91529307103255563}
+  treeState: 0
+  nodes:
+  - {fileID: -91529307103255563}
+  - {fileID: -4634764004049452981}
+  - {fileID: 7906830593573532388}
+  - {fileID: 4480939150811395769}
+  - {fileID: 6160362348527819415}
+  - {fileID: 3546363941196665494}
+  - {fileID: 5786108949581935001}
+  - {fileID: 7509154582647135294}
+  - {fileID: 811851775043685530}
+  - {fileID: -6611501620438843827}
+  blackboard:
+    target: {fileID: 0}
+--- !u!114 &811851775043685530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f968df4209f6f614382bfffa3d27516a, type: 3}
+  m_Name: Weight Decorator
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: aa86ef367ad0eab4594d2d72183b3788
+  position: {x: 413, y: 451}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -6611501620438843827}
+--- !u!114 &3546363941196665494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc7a8b2d7d70db4aa41219321c79de7, type: 3}
+  m_Name: Skill Performer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8b0a71a11b66ec44887ae3d4985dc168
+  position: {x: 60, y: 451}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  type: 1
+  index: 0
+--- !u!114 &4480939150811395769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61975187ae072f547b64c292ba597eef, type: 3}
+  m_Name: Test B
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e08e99b80cdac264ba882c67fb0d820d
+  position: {x: -100, y: 451}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &5786108949581935001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc7a8b2d7d70db4aa41219321c79de7, type: 3}
+  m_Name: Skill Performer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8935b8f540f21894bb9d18131ca1667e
+  position: {x: 220, y: 451}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  type: 1
+  index: 1
+--- !u!114 &6160362348527819415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037a2e957d5b2a4ea5247c1fa05c40e, type: 3}
+  m_Name: Repeat
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 983a591a59e08de41a64486139035693
+  position: {x: -5.699978, y: 130}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -4634764004049452981}
+--- !u!114 &7509154582647135294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f968df4209f6f614382bfffa3d27516a, type: 3}
+  m_Name: Weight Decorator
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 71a37aaaa1048f74b8466f736e8180b2
+  position: {x: 509.00006, y: 178}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 0}
+--- !u!114 &7906830593573532388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3678b3db512860e4e95ad642cdfd8a60, type: 3}
+  m_Name: Test A
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b809eae4230048141ae7d6f86106906d
+  position: {x: -260, y: 451}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 

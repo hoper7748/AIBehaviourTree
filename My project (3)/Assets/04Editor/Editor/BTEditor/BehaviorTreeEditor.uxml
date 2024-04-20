@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/04Editor/Editor/BTEditor/BehaviorTreeEditor.uss?fileID=7433441132597879392&amp;guid=492b402a0c5b3304d85b60036703b229&amp;type=3#BehaviorTreeEditor" />
+    <uie:Toolbar>
+        <uie:ToolbarMenu tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" text="Assets" />
+    </uie:Toolbar>
+    <SplitView fixed-pane-initial-dimension="300">
+        <ui:VisualElement name="left-panel" style="flex-grow: 1;">
+            <SplitView orientation="Vertical" fixed-pane-initial-dimension="180">
+                <ui:VisualElement name="inspector-container" style="flex-grow: 1; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; min-height: 30px;">
+                    <ui:Label tabindex="-1" text="Inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title-label1" />
+                    <ui:ScrollView touch-scroll-type="Clamped" nested-interaction-kind="Default" vertical-scroller-visibility="Auto">
+                        <ui:VisualElement name="scroll-container" style="flex-grow: 1; position: relative; flex-basis: 100%; height: auto; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;">
+                            <InspectorView style="flex-grow: 1; padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;" />
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                <ui:VisualElement name="blackboard-conatiner" style="flex-grow: 1; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; background-color: rgb(56, 56, 56); min-height: 30px;">
+                    <ui:Label tabindex="-1" text="Blackboard" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title-label1" />
+                    <ui:ScrollView>
+                        <ui:VisualElement name="scroll-container" style="flex-grow: 1;">
+                            <ui:IMGUIContainer style="margin-top: 0; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;" />
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+            </SplitView>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="flex-grow: 1; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;">
+            <ui:Label tabindex="-1" text="Tree View" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title-label2" style="background-color: rgb(37, 37, 37); margin-top: 0; margin-right: 15px; margin-bottom: 5px; margin-left: 15px; border-left-color: rgb(202, 202, 202); border-right-color: rgb(202, 202, 202); border-top-color: rgb(202, 202, 202); border-bottom-color: rgb(202, 202, 202); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; font-size: 20px; -unity-text-align: middle-center;" />
+            <BehaviorTreeView style="margin-top: 5px; margin-right: 15px; margin-bottom: 15px; margin-left: 15px; flex-grow: 1; border-left-color: rgb(185, 212, 186); border-right-color: rgb(185, 212, 186); border-top-color: rgb(185, 212, 186); border-bottom-color: rgb(185, 212, 186); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; overflow: hidden; visibility: visible; display: flex; opacity: 1;" />
+        </ui:VisualElement>
+    </SplitView>
+</ui:UXML>

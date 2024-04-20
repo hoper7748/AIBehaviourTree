@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7705046479617816543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5acf1b9ea76cd634d898346fd3a3570f, type: 3}
+  m_Name: Melee Attack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 05665d64943b09b4496adc825d0b0cc6
+  position: {x: 159.99997, y: 681.99994}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: "\uADFC\uC811 \uACF5\uACA9"
+  attackDelay: 0.3
+--- !u!114 &-3707568990579700668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9d44455981da64085eaea3f8d8eba9, type: 3}
+  m_Name: Weight Selector No Fail
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9b12657136979d24d9ee59b71afd84a4
+  position: {x: 0, y: 171}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  children:
+  - {fileID: 2723785717633851123}
+  - {fileID: 6511053487514718593}
+  totalWeights: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c92f7a0caa2af94aab74cc9464ab471, type: 3}
+  m_Name: MeleeTest
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 6709100987325103689}
+  treeState: 0
+  nodes:
+  - {fileID: 6709100987325103689}
+  - {fileID: 4578624188912043700}
+  - {fileID: 4823435664471151232}
+  - {fileID: 2808860648938779047}
+  - {fileID: 4283285154330625391}
+  - {fileID: -7705046479617816543}
+  - {fileID: 6511053487514718593}
+  - {fileID: -3707568990579700668}
+  - {fileID: 2723785717633851123}
+  blackboard:
+    target: {fileID: 0}
+--- !u!114 &2723785717633851123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f968df4209f6f614382bfffa3d27516a, type: 3}
+  m_Name: Weight Decorator
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1117c3b71a0762844bdd29fe6bb07375
+  position: {x: 0, y: 322}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 4823435664471151232}
+--- !u!114 &2808860648938779047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eaf647ead33b56438114e81d2d0bdab, type: 3}
+  m_Name: EnemyTraceNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 49035680784001048afdcbf9bb1313cf
+  position: {x: 0.0000042915344, y: 681.8099}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: "Enemy(target) \uCD94\uC801"
+  attackDistance: 1
+--- !u!114 &4283285154330625391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037a2e957d5b2a4ea5247c1fa05c40e, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: cc5c906f2e07c0042be23c7c8835365d
+  position: {x: 0.000091552734, y: 27.676062}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -3707568990579700668}
+--- !u!114 &4578624188912043700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d0e59370084d541940c7f03e0759a0, type: 3}
+  m_Name: EnemySearcherNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c81c41966f05e1747aaa66794d825f66
+  position: {x: -159.99995, y: 681.8099}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: "Enemy(target) \uD0D0\uC0C9"
+  traceDistance: 10
+--- !u!114 &4823435664471151232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8695634c7a287049a0824a24202591b, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 724807140c1c19649a8986e3cb891d5b
+  position: {x: 0.0000042915344, y: 473.80994}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: "\uC804\uD22C \uC2E4\uD589 \uD750\uB984"
+  children:
+  - {fileID: 4578624188912043700}
+  - {fileID: 2808860648938779047}
+  - {fileID: -7705046479617816543}
+--- !u!114 &6511053487514718593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc7a8b2d7d70db4aa41219321c79de7, type: 3}
+  m_Name: Skill Performer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: bcebecbbab64a704596b92240756765f
+  position: {x: 178.82645, y: 322}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  type: 0
+  index: 0
+--- !u!114 &6709100987325103689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7c5fb4749c608409db46d3873341cc, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: f046bcf24b94a7243b01be0286e602fb
+  position: {x: 0.00005340576, y: -118.422264}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: 4283285154330625391}

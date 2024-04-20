@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6538239621545322879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8695634c7a287049a0824a24202591b, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 87a0a72616b0de842805ae96de0e40ff
+  position: {x: 98, y: 57}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-5242818049486756928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7c5fb4749c608409db46d3873341cc, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e39ac748679683b40b61bd6c7b9a2185
+  position: {x: 97, y: -202}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-2336274009519339537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5acf1b9ea76cd634d898346fd3a3570f, type: 3}
+  m_Name: Melee Attack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a8629e27aab7abe4588d6c7a163322f5
+  position: {x: 276.90912, y: 271.0909}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  attackDelay: 0.8
+--- !u!114 &-821404767734038361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eaf647ead33b56438114e81d2d0bdab, type: 3}
+  m_Name: Enemy Trace
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 774eabc608baca545ab0515ef4eb72f6
+  position: {x: 103.90908, y: 272}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  attackDistance: 1
+--- !u!114 &-146185384791657433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037a2e957d5b2a4ea5247c1fa05c40e, type: 3}
+  m_Name: Repeat
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8571919147d0f9a40ae4b74e96122156
+  position: {x: 97.00001, y: -82.72728}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c92f7a0caa2af94aab74cc9464ab471, type: 3}
+  m_Name: test  1
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -5242818049486756928}
+  treeState: 0
+  nodes:
+  - {fileID: -5242818049486756928}
+  - {fileID: -146185384791657433}
+  - {fileID: -821404767734038361}
+  - {fileID: 3683125962988530254}
+  - {fileID: -2336274009519339537}
+  - {fileID: -6538239621545322879}
+  blackboard:
+    target: {fileID: 0}
+--- !u!114 &3683125962988530254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d0e59370084d541940c7f03e0759a0, type: 3}
+  m_Name: Enemy Searcher
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6e2826989553bc942b49828e21c17199
+  position: {x: -84, y: 276}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  traceDistance: 15

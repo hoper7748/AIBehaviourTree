@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6607495871758283633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3e0c5eeb268b6488f17d5d0eee367d, type: 3}
+  m_Name: Debug Log
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e5446779d95d71e4f957c334fe17ef6f
+  position: {x: 0.000051498413, y: 129.26447}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  message: SkillA
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c92f7a0caa2af94aab74cc9464ab471, type: 3}
+  m_Name: LogSkill
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 2879234380289572591}
+  treeState: 0
+  nodes:
+  - {fileID: 2879234380289572591}
+  - {fileID: -6607495871758283633}
+  blackboard:
+    target: {fileID: 0}
+--- !u!114 &2879234380289572591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7c5fb4749c608409db46d3873341cc, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5a42b80bcb201fd47a80ce8b6357c0de
+  position: {x: -0.000040134575, y: -0.7513163}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  child: {fileID: -6607495871758283633}

@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8899152177617616761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d0e59370084d541940c7f03e0759a0, type: 3}
+  m_Name: Enemy Searcher
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 47f0d9094b063f64db28aae757b0f2b6
+  position: {x: -436, y: 398}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  traceDistance: 7
+--- !u!114 &-5371256634169199290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8695634c7a287049a0824a24202591b, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b967f7fb3b278924f9975526014ad7f2
+  position: {x: -615, y: 375}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-4278956973839349122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905c320790f758a40a50f19dee15b404, type: 3}
+  m_Name: Retreat
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a5991ed4c8697f94b87c4fab4c0b7ac8
+  position: {x: -449, y: 553.1}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  retreatTime: 0.5
+  speedRatio: 3
+--- !u!114 &-3941598829211996529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3e0c5eeb268b6488f17d5d0eee367d, type: 3}
+  m_Name: Debug Log
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ca16c5ed8e4513c43b49473462276f99
+  position: {x: 68.810875, y: 396.44992}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  message: "\uB0B4 \uACF5\uACA9\uC744 \uBC1B\uC544\uB77C!!!"
+--- !u!114 &-3782089778648798842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7c5fb4749c608409db46d3873341cc, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5bbc919343de6df439304cd78f4a7ee0
+  position: {x: -248.97894, y: -152.00696}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &-3688510032079943244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba6106a9f41fed49af58aa4a5f21949, type: 3}
+  m_Name: In Range Disciminator
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e40d7822d2caf5f41b347750fc700c1b
+  position: {x: -615.9, y: 549.2999}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  discriminateDistance: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c92f7a0caa2af94aab74cc9464ab471, type: 3}
+  m_Name: fucking back step
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -3782089778648798842}
+  treeState: 0
+  nodes:
+  - {fileID: -3782089778648798842}
+  - {fileID: 2510912439745456752}
+  - {fileID: 4604952854773469734}
+  - {fileID: 4168597614626295999}
+  - {fileID: -8899152177617616761}
+  - {fileID: 2951517570998095870}
+  - {fileID: -3941598829211996529}
+  - {fileID: -4278956973839349122}
+  - {fileID: -5371256634169199290}
+  - {fileID: -3688510032079943244}
+  - {fileID: 5147761497481217431}
+  - {fileID: 3891743313470047464}
+  blackboard:
+    target: {fileID: 0}
+--- !u!114 &2510912439745456752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6fd8ee0db24427419ce524044c0df73, type: 3}
+  m_Name: Ranged Attack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9ba60b9906ef5074ea07c71016e827a3
+  position: {x: -92.99986, y: 403.20993}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  attackDelay: 1
+  bulletPrefab: {fileID: 7157686825130914283, guid: 6c10d2a145683fb41a8b27b410b5e33c, type: 3}
+  bulletDuration: 5
+  bulletSpeed: 10
+--- !u!114 &2951517570998095870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eaf647ead33b56438114e81d2d0bdab, type: 3}
+  m_Name: Enemy Trace
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 2c3b9c2a379633340937c271af66420b
+  position: {x: -271, y: 397}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  attackDistance: 7
+--- !u!114 &3891743313470047464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d0e59370084d541940c7f03e0759a0, type: 3}
+  m_Name: Enemy Searcher
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 43e3c0e5b2e60504984041115ab56255
+  position: {x: 0, y: 0}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  traceDistance: 5
+--- !u!114 &4168597614626295999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8695634c7a287049a0824a24202591b, type: 3}
+  m_Name: Sequencer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 475a0057076a50b4fbde9a666e7deb05
+  position: {x: -249, y: 106}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &4604952854773469734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037a2e957d5b2a4ea5247c1fa05c40e, type: 3}
+  m_Name: Repeat
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5c0d314a9b428444db730ce2b489458c
+  position: {x: -246, y: -27.080002}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+--- !u!114 &5147761497481217431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3e0c5eeb268b6488f17d5d0eee367d, type: 3}
+  m_Name: Debug Log
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6155145c1652de946abcda59dbf2581f
+  position: {x: -290, y: 550}
+  blackboard:
+    target: {fileID: 0}
+  agent: {fileID: 0}
+  description: 
+  message: "\uB3C4\uB9DD\uCCD0 !!!"
